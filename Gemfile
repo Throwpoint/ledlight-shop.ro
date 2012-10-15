@@ -32,11 +32,21 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '1.1.3'
+# gem 'spree', '1.1.3'
+gem 'spree'
+# gem 'spree', :git => '../spree-ledlight'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
+
+
+group :production do
+  gem 'unicorn'
+  gem 'mysql2'
+  gem 'foreman'
+  gem 'therubyracer' #only required for 0.70.x or later
+end

@@ -1,4 +1,14 @@
 ro: 
+  number:
+      # Used in number_to_currency()
+      currency:
+        format:
+          format: "%n %u"
+          unit: "RON"
+          # These three are to override number.format and are optional
+          separator: "."
+          delimiter: " "
+          precision: 2
   date:
     formats:
       default: "%d-%m-%Y"
@@ -179,8 +189,8 @@ ro:
         one: "Product group"
         other: "Product groups"
       property: 
-        one: Property
-        other: Properties
+        one: Proprietate
+        other: Proprietati
       prototype: 
         one: Prototype
         other: Prototypes
@@ -670,15 +680,15 @@ ro:
   problem_authorizing_card: "Problem authorizing credit card"
   problem_capturing_card: "Problem capturing credit card"
   problems_processing_order: "We had problems processing your order"
-  proceed_as_guest: "No Thanks, Proceed as Guest"
-  process: Process
-  product: Product
-  product_details: "Product Details"
-  product_group: Product Group
+  proceed_as_guest: "Nu multumesc, proceseaza ca Guest"
+  process: Proces
+  product: Produs
+  product_details: "Detalii produs"
+  product_group: Grup de produse
   product_group_invalid: Product Group has invalid scopes
-  product_groups: Product Groups
-  product_has_no_description: This product has no description
-  product_properties: "Product Properties"
+  product_groups: Groupe de produse
+  product_has_no_description: Acest produs nu are descriere
+  product_properties: "Proprietati produs"
   product_rule: 
     choose_products: Choose products
     label: "Order must contain %{select} of these products"
@@ -825,7 +835,7 @@ ro:
       name: User
   promotions: Promotions
   promotions_description: Manage offers and coupons with promotions
-  properties: Properties
+  properties: Proprietati
   property: Property
   prototype: Prototype
   prototypes: Prototypes
@@ -1079,3 +1089,4 @@ ro:
       key_generated: "API key generated"
       no_key: "No key defined"
       regenerate_key: "Regenerate API key"
+  no_payment_methods_available: "Nu exista medode de plata"
