@@ -35,8 +35,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: ledlight-shop_production
+  database: spree
   pool: 5
-  username: root
-  password:
+  username: spree
+  password: ledlight-shop_production
   socket: /tmp/mysql.sock
