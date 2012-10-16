@@ -5,3 +5,4 @@ require File.expand_path('../application', __FILE__)
 LedlightShop::Application.initialize!
 
 ActiveRecord::Base.include_root_in_json = true
+ENV['RAILS_ENV'] = 'production'
