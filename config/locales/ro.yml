@@ -389,7 +389,7 @@ ro:
   email: Email
   email_address: "Email Address"
   email_server_settings_description: "Set email server settings."
-  empty: "Empty"
+  empty: "Gol"
   empty_cart: "Goleste cos"
   enable_login_via_login_password: "Use standard email/password"
   enable_login_via_openid: "Use OpenID instead"
@@ -565,10 +565,10 @@ ro:
   no_items_in_cart: "Cosul este gol."
   no_match_found: "No Match Found"
   no_payment_methods_available: "Can't check out, no payment methods are configured for this environment"
-  no_products_found: "No products found"
-  no_results: "No results"
+  no_products_found: "Nu s-au gasit produse"
+  no_results: "Nu exista rezultate"
   no_rules_added: No rules added
-  no_user_found: "No user was found with that email address"
+  no_user_found: "Nu exista un user cu aceasta parola"
   none: None
   none_available: "None Available"
   normal_amount: "Normal Amount"
