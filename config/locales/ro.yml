@@ -337,7 +337,7 @@ ro:
   coupon: Coupon
   coupon_code: Coupon code
   create: Create
-  create_a_new_account: "Create a new account"
+  create_a_new_account: "Creaza un cont nou"
   create_product_group_from_products: Create a new product group from these products
   create_user_account: Create User Account
   created_successfully: "Created Successfully"
@@ -854,7 +854,7 @@ ro:
   register: Register as a New User
   register_or_guest: Checkout as Guest or Register
   registration: Registration
-  remember_me: "Remember me"
+  remember_me: "Tine-ma minte"
   remove: Remove
   reports: Reports
   required_for_solo_and_maestro: Required for Solo and Maestro cards.

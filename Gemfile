@@ -43,7 +43,6 @@ gem 'spree_usa_epay'
 gem 'spree_skrill'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
-
 group :production do
   gem 'unicorn'
   gem 'mysql2'

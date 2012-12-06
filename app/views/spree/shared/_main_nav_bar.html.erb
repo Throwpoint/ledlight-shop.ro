@@ -1,0 +1,15 @@
+<nav class="columns alpha omega sixteen">
+  <ul id="main-nav-bar" class="inline" data-hook>
+	
+		<nav id="taxonomies" class="sidebar-item" data-hook>
+		  <% get_taxonomies.each do |taxonomy| %>
+		    <%= taxons_tree(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
+		  <% end %>
+		</nav>
+	
+    <!-- <li id="home-link" data-hook><%= link_to t(:home), root_path %></li> -->
+    <li id="search-bar" class="fr" data-hook>
+	    <%= render :partial => 'spree/shared/search' %>
+    </li>
+  </ul>
+</nav>
