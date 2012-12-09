@@ -1,3 +1,5 @@
+require 'rvm/capistrano' set :rvm_ruby_string, '1.9.2' 
+
 set :application, "LedLight-Shop"
 set :repository,  "git://github.com/MentarioMedia/spree-ledlight.git"
 set :user, "root"
@@ -27,3 +29,4 @@ role :db,  "ledlight-shop.ro", :primary => true # This is where Rails migrations
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 #   end
 # end
+
