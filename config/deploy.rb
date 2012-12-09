@@ -1,13 +1,17 @@
-set :application, "set your application name here"
-set :repository,  "set your repository location here"
+set :application, "LedLight-Shop"
+set :repository,  "git://github.com/MentarioMedia/spree-ledlight.git"
+set :user, "root"
+set :use_sudo, true  
+set :keep_releases, 5
+set :deploy_to, "/home/deploy/www/#{application}"
 
-set :scm, :subversion
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "your web-server here"                          # Your HTTP server, Apache/etc
-role :app, "your app-server here"                          # This may be the same as your `Web` server
-role :db,  "your primary db-server here", :primary => true # This is where Rails migrations will run
-role :db,  "your slave db-server here"
+set :scm, :git
+
+role :web, "ledlight-shop.ro"                          # Your HTTP server, Apache/etc
+role :app, "ledlight-shop.ro"                          # This may be the same as your `Web` server
+role :db,  "ledlight-shop.ro", :primary => true # This is where Rails migrations will run
+# role :db,  "your slave db-server here"
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
