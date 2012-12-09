@@ -7,7 +7,6 @@ gem 'rails', '3.2.7'
 
 gem 'mysql2'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -44,9 +43,10 @@ gem 'spree_skrill'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 
 group :production do
-  gem 'unicorn'
   gem 'mysql2'
   gem 'foreman'
   gem 'therubyracer' #only required for 0.70.x or later
 	gem 'execjs'
+  gem 'capistrano'
+	gem 'rvm-capistrano'
 end
