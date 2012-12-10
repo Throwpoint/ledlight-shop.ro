@@ -1,6 +1,3 @@
-require "rvm/capistrano"
-
-set :rvm_ruby_string, '1.9.2'
 set :application, "LedLight-Shop"
 set :repository,  "git://github.com/MentarioMedia/spree-ledlight.git"
 set :user, "root"
