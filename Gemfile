@@ -48,5 +48,5 @@ group :production do
   gem 'therubyracer' #only required for 0.70.x or later
   gem 'rvm-capistrano'	
 	gem 'execjs'
-	gem 'sprockets'
+	gem 'sprockets/railtie'
 end
