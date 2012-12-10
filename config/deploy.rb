@@ -7,14 +7,16 @@ set :use_sudo, true
 set :keep_releases, 5
 set :deploy_to, "/home/deploy/www/#{application}"
 set :rvm_type, :system
-
+set :rvm_install_type, :stable
+set :rvm_install_ruby, :install
+set :rvm_ruby_string, 'ruby-1.9.3-p286'
 
 set :scm, :git
 
 role :web, "ledlight-shop.ro"                          # Your HTTP server, Apache/etc
 role :app, "ledlight-shop.ro"                          # This may be the same as your `Web` server
 role :db,  "ledlight-shop.ro", :primary => true # This is where Rails migrations will run
-# role :db,  "your slave db-server here"
+role :db,  "ledlight-shop.ro"
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
