@@ -1,5 +1,4 @@
 require "rvm/capistrano"
-require "bundler/capistrano"
 
 set :application, "LedLight-Shop"
 set :repository,  "git://github.com/MentarioMedia/spree-ledlight.git"
