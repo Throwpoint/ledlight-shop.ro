@@ -7,7 +7,7 @@ set :user, "root"
 set :use_sudo, true  
 set :keep_releases, 5
 set :deploy_to, "/home/deploy/www/#{application}"
-
+set :rvm_type, :system
 
 
 set :scm, :git
