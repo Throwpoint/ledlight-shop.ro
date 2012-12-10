@@ -47,4 +47,5 @@ group :production do
   gem 'foreman'
   gem 'therubyracer' #only required for 0.70.x or later
 	gem 'execjs'
+  gem 'rvm-capistrano'	
 end

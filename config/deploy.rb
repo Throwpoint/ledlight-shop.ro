@@ -1,9 +1,13 @@
+require "rvm/capistrano"
+require "bundler/capistrano"
+
 set :application, "LedLight-Shop"
 set :repository,  "git://github.com/MentarioMedia/spree-ledlight.git"
 set :user, "root"
 set :use_sudo, true  
 set :keep_releases, 5
 set :deploy_to, "/home/deploy/www/#{application}"
+
 
 
 set :scm, :git
