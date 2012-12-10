@@ -277,5 +277,6 @@ DEPENDENCIES
   spree_i18n!
   spree_skrill
   spree_usa_epay
+  sprockets
   therubyracer
   uglifier (>= 1.0.3)
