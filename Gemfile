@@ -50,3 +50,6 @@ group :production do
 	gem 'execjs'
 	gem 'sprockets'
 end
+
+gem 'sinatra', '1.1.0'
+gem 'thin'
